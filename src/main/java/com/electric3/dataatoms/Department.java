@@ -9,7 +9,7 @@ public class Department extends Gsonable {
     private String clientId = "";
     private int progress = 0;
     private String createdAt = "";
-    private String modifedAt = "";
+    private String modifiedAt = "";
 
     public Department() {}
 
@@ -25,16 +25,16 @@ public class Department extends Gsonable {
         this.createdAt = createdAt;
     }
 
-    public void setModifedAt(String modifedAt) {
-        this.modifedAt = modifedAt;
-    }
-
     public String getCreatedAt() {
         return createdAt;
     }
 
-    public String getModifedAt() {
-        return modifedAt;
+    public void setModifiedAt(String modifiedAt) {
+        this.modifiedAt = modifiedAt;
+    }
+
+    public String getModifiedAt() {
+        return modifiedAt;
     }
 
     public void set_id(Object _id) {

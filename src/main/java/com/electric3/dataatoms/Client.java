@@ -7,6 +7,8 @@ public class Client extends Gsonable {
     private String description;
     private String phone;
     private String email;
+    private String createdAt = "";
+    private String modifiedAt = "";
 
     public Client() {}
 
@@ -16,6 +18,22 @@ public class Client extends Gsonable {
         this.description = description;
         this.phone = phone;
         this.email = email;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setModifiedAt(String modifiedAt) {
+        this.modifiedAt = modifiedAt;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getModifiedAt() {
+        return modifiedAt;
     }
 
     public void set_id(Object _id) {

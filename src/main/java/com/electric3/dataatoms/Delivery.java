@@ -14,7 +14,7 @@ public class Delivery extends Gsonable {
     private String description = "";
     private String projectId = "";
     private String createdAt = "";
-    private String modifedAt = "";
+    private String modifiedAt = "";
 
     public Delivery() {
     }
@@ -33,8 +33,8 @@ public class Delivery extends Gsonable {
         this.createdAt = createdAt;
     }
 
-    public void setModifedAt(String modifedAt) {
-        this.modifedAt = modifedAt;
+    public void setModifiedAt(String modifiedAt) {
+        this.modifiedAt = modifiedAt;
     }
 
     public String getProjectId() {
@@ -45,8 +45,8 @@ public class Delivery extends Gsonable {
         return createdAt;
     }
 
-    public String getModifedAt() {
-        return modifedAt;
+    public String getModifiedAt() {
+        return modifiedAt;
     }
 
     public void setProjectId(String projectId) {
