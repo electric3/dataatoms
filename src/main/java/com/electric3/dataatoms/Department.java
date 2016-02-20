@@ -1,8 +1,5 @@
 package com.electric3.dataatoms;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class Department extends Gsonable {
     private Object _id;
     private User owner;
