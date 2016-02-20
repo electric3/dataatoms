@@ -4,7 +4,7 @@ public class Action extends Gsonable {
     private Object _id;
     private User    actionAuthor;
     private String  actionStringRepresentation = "";
-    private long    timestamp = 0;
+    private String    timestamp = "";
     private String  linkToEvent = "";
     private String  clientId;
     private String  projectId;
@@ -12,7 +12,7 @@ public class Action extends Gsonable {
     public Action(){
     }
 
-    public Action(User actionAuthor, String actionStringRepresentation, long timestamp, String linkToEvent) {
+    public Action(User actionAuthor, String actionStringRepresentation, String timestamp, String linkToEvent) {
         this.actionAuthor = actionAuthor;
         this.actionStringRepresentation = actionStringRepresentation;
         this.timestamp = timestamp;
@@ -39,11 +39,11 @@ public class Action extends Gsonable {
         this.actionStringRepresentation = actionStringRepresentation;
     }
 
-    public long getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(long timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

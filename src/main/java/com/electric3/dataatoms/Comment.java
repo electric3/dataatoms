@@ -4,9 +4,9 @@ public class Comment extends Gsonable {
     private Object _id;
     private User author;
     private String comment = "";
-    private long timestamp = 0;
+    private String timestamp = "";
 
-    public Comment(User author, String comment, long timestamp) {
+    public Comment(User author, String comment, String timestamp) {
         this.author = author;
         this.comment = comment;
         this.timestamp = timestamp;
@@ -36,11 +36,11 @@ public class Comment extends Gsonable {
         this.comment = comment;
     }
 
-    public long getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(long timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

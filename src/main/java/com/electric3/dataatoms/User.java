@@ -1,13 +1,22 @@
 package com.electric3.dataatoms;
 
 public class User extends Gsonable {
-    private String user_id = "";
+    private String user_id;
     private UserMetadata user_metadata;
-    private String email = "";
-    private String password = "";
-    private String connection = "";
-    private String created_at = "";
-    private String modified_at = "";
+    private String email;
+    private String password;
+    private String connection;
+    private String client_id;
+    private String created_at;
+    private String modified_at;
+
+    public void setClient_id(String client_id) {
+        this.client_id = client_id;
+    }
+
+    public String getClient_id() {
+        return client_id;
+    }
 
     public void setUser_id(String user_id) {
         this.user_id = user_id;

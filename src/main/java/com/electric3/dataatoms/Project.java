@@ -7,7 +7,7 @@ public class Project extends Gsonable {
     private String description = "";
     private StatusEnum status = StatusEnum.GREEN;
     private int progress = 0;
-    private long deadline = 0;
+    private String deadline = "";
     private String departmentId = "";
 
     public void set_id(Object _id) {
@@ -58,11 +58,11 @@ public class Project extends Gsonable {
         return progress;
     }
 
-    public long getDeadline() {
+    public String getDeadline() {
         return deadline;
     }
 
-    public void setDeadline(long deadline) {
+    public void setDeadline(String deadline) {
         this.deadline = deadline;
     }
 
