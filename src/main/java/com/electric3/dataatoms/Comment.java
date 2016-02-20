@@ -16,6 +16,10 @@ public class Comment extends Gsonable {
 
     }
 
+    public void set_id(Object _id) {
+        this._id = _id;
+    }
+
     public User getAuthor() {
         return author;
     }

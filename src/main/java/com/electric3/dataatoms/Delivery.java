@@ -27,6 +27,14 @@ public class Delivery extends Gsonable {
         this.assignee = assignee;
     }
 
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
+    }
+
+    public void set_id(Object _id) {
+        this._id = _id;
+    }
+
     public Object get_id() {
         return _id;
     }

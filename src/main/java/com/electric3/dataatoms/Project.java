@@ -10,6 +10,10 @@ public class Project extends Gsonable {
     private long deadline = 0;
     private String departmentId = "";
 
+    public void set_id(Object _id) {
+        this._id = _id;
+    }
+
     public void setOwner(User owner) {
         this.owner = owner;
     }

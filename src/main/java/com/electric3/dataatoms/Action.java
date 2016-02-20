@@ -19,6 +19,10 @@ public class Action extends Gsonable {
         this.linkToEvent = linkToEvent;
     }
 
+    public void set_id(Object _id) {
+        this._id = _id;
+    }
+
     public User getActionAuthor() {
         return actionAuthor;
     }
