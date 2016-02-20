@@ -70,6 +70,7 @@ public class User extends Gsonable {
         private String skypeName = "";
         private String phone = "";
         private String name = "";
+        private String clientId;
         private UserRole role = UserRole.EMPLOYEE;
 
         public String getPhotoUrl() {
@@ -110,6 +111,14 @@ public class User extends Gsonable {
 
         public void setRole(UserRole role) {
             this.role = role;
+        }
+
+        public String getClientId() {
+            return clientId;
+        }
+
+        public void setClientId(String clientId) {
+            this.clientId = clientId;
         }
     }
 }

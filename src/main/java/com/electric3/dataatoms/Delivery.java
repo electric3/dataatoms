@@ -12,6 +12,7 @@ public class Delivery extends Gsonable {
     private StatusEnum status = StatusEnum.GREEN;
     private String title = "";
     private String description = "";
+    private String projectId = "";
 
     public Delivery() {
     }

@@ -8,17 +8,16 @@ public class Department extends Gsonable {
     private User owner;
     private String title = "";
     private String description = "";
-    private List<Project> projects = new LinkedList<>();
     private StatusEnum status = StatusEnum.GREEN;
+    private String clientId = "";
     private int progress = 0;
 
     public Department() {}
 
-    public Department(User owner, String title, String description, List<Project> projects, StatusEnum status, int progress) {
+    public Department(User owner, String title, String description, StatusEnum status, int progress) {
         this.owner = owner;
         this.title = title;
         this.description = description;
-        this.projects = projects;
         this.status = status;
         this.progress = progress;
     }
@@ -51,14 +50,6 @@ public class Department extends Gsonable {
         this.description = description;
     }
 
-    public List<Project> getProjects() {
-        return projects;
-    }
-
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
-    }
-
     public StatusEnum getStatus() {
         return status;
     }
@@ -73,5 +64,12 @@ public class Department extends Gsonable {
 
     public void setProgress(int progress) {
         this.progress = progress;
+    }
+    public String getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
     }
 }
