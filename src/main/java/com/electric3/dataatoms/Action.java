@@ -1,6 +1,7 @@
 package com.electric3.dataatoms;
 
 public class Action extends Gsonable {
+    private Object _id;
     private User    actionAuthor;
     private String  actionStringRepresentation;
     private long    timestamp;
@@ -46,5 +47,9 @@ public class Action extends Gsonable {
 
     public void setLinkToEvent(String linkToEvent) {
         this.linkToEvent = linkToEvent;
+    }
+
+    public Object get_id() {
+        return _id;
     }
 }

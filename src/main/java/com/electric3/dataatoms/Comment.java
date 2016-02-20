@@ -1,6 +1,7 @@
 package com.electric3.dataatoms;
 
 public class Comment extends Gsonable {
+    private Object _id;
     private User author;
     private String comment;
     private long timestamp;
@@ -37,5 +38,9 @@ public class Comment extends Gsonable {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public Object get_id() {
+        return _id;
     }
 }
