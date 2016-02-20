@@ -2,34 +2,15 @@ package com.electric3.dataatoms;
 
 public class Action extends Gsonable {
     private Object _id;
-    private User    actionAuthor;
-    private String  actionStringRepresentation = "";
-    private String    timestamp = "";
-    private String  linkToEvent = "";
-    private String  clientId;
-    private String  projectId;
-    private String  departmentId;
-
-    public Action(){
-    }
-
-    public Action(User actionAuthor, String actionStringRepresentation, String timestamp, String linkToEvent) {
-        this.actionAuthor = actionAuthor;
-        this.actionStringRepresentation = actionStringRepresentation;
-        this.timestamp = timestamp;
-        this.linkToEvent = linkToEvent;
-    }
+    private String actionStringRepresentation = "";
+    private String timestamp = "";
+    private String linkToEvent = "";
+    private String clientId = "";
+    private String projectId = "";
+    private String departmentId = "";
 
     public void set_id(Object _id) {
         this._id = _id;
-    }
-
-    public User getActionAuthor() {
-        return actionAuthor;
-    }
-
-    public void setActionAuthor(User actionAuthor) {
-        this.actionAuthor = actionAuthor;
     }
 
     public String getActionStringRepresentation() {
