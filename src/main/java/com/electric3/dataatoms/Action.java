@@ -6,6 +6,8 @@ public class Action extends Gsonable {
     private String  actionStringRepresentation = "";
     private long    timestamp = 0;
     private String  linkToEvent = "";
+    private String  clientId;
+    private String  projectId;
 
     public Action(){
     }
@@ -51,5 +53,21 @@ public class Action extends Gsonable {
 
     public Object get_id() {
         return _id;
+    }
+
+    public String getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
+    }
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
     }
 }
