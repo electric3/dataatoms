@@ -1,16 +1,17 @@
 package com.electric3.dataatoms;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Delivery extends Gsonable {
     private Object _id;
     private User assignee;
-    private List<Comment> comments;
-    private List<Attachment> attachments;
-    private int progress; // value from 0 to 100
-    private StatusEnum status;
-    private String title;
-    private String description;
+    private List<Comment> comments = new LinkedList<>();
+    private List<Attachment> attachments = new LinkedList<>();
+    private int progress = 0; // value from 0 to 100
+    private StatusEnum status = StatusEnum.GREEN;
+    private String title = "";
+    private String description = "";
 
     public Delivery() {
     }

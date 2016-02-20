@@ -2,9 +2,10 @@ package com.electric3.dataatoms;
 
 public class Attachment extends Gsonable {
     private Object _id;
-    private String displayName;
-    private String location;
-    private String description;
+    private String displayName = "";
+    private String location = "";
+    private String description = "";
+    private long creationTimestramp = 0;
 
     public Attachment(String displayName, String location, String description) {
         this.displayName = displayName;
@@ -43,7 +44,11 @@ public class Attachment extends Gsonable {
         return _id;
     }
 
-    public void set_id(Object _id) {
-        this._id = _id;
+    public long getCreationTimestramp() {
+        return creationTimestramp;
+    }
+
+    public void setCreationTimestramp(long creationTimestramp) {
+        this.creationTimestramp = creationTimestramp;
     }
 }

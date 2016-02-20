@@ -3,9 +3,9 @@ package com.electric3.dataatoms;
 public class Action extends Gsonable {
     private Object _id;
     private User    actionAuthor;
-    private String  actionStringRepresentation;
-    private long    timestamp;
-    private String  linkToEvent;
+    private String  actionStringRepresentation = "";
+    private long    timestamp = 0;
+    private String  linkToEvent = "";
 
     public Action(){
     }
