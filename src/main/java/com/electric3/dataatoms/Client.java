@@ -1,7 +1,5 @@
 package com.electric3.dataatoms;
 
-import java.util.List;
-
 public class Client extends Gsonable {
     private Object _id;
     private User owner;
@@ -9,7 +7,6 @@ public class Client extends Gsonable {
     private String description;
     private String phone;
     private String email;
-    private List<String> departments;
 
     public Client() {}
 
