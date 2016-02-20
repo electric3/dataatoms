@@ -8,6 +8,7 @@ public class Action extends Gsonable {
     private String  linkToEvent = "";
     private String  clientId;
     private String  projectId;
+    private String  departmentId;
 
     public Action(){
     }
@@ -73,5 +74,13 @@ public class Action extends Gsonable {
 
     public void setProjectId(String projectId) {
         this.projectId = projectId;
+    }
+
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(String departmentId) {
+        this.departmentId = departmentId;
     }
 }
