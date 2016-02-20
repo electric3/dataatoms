@@ -1,7 +1,11 @@
 package com.electric3.dataatoms;
 
-/**
- * Created by ivan on 20/02/2016.
- */
+import java.util.List;
+
 public class Project extends Gsonable {
+    private Object _id;
+    private User owner;
+    private String title;
+    private String description;
+    private List<Delivery> deliveries;
 }
