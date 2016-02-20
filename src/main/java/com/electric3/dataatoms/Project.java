@@ -9,6 +9,24 @@ public class Project extends Gsonable {
     private int progress = 0;
     private String deadline = "";
     private String departmentId = "";
+    private String createdAt = "";
+    private String modifedAt = "";
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setModifedAt(String modifedAt) {
+        this.modifedAt = modifedAt;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getModifedAt() {
+        return modifedAt;
+    }
 
     public void set_id(Object _id) {
         this._id = _id;

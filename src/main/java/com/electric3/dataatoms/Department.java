@@ -8,6 +8,8 @@ public class Department extends Gsonable {
     private StatusEnum status = StatusEnum.GREEN;
     private String clientId = "";
     private int progress = 0;
+    private String createdAt = "";
+    private String modifedAt = "";
 
     public Department() {}
 
@@ -17,6 +19,22 @@ public class Department extends Gsonable {
         this.description = description;
         this.status = status;
         this.progress = progress;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setModifedAt(String modifedAt) {
+        this.modifedAt = modifedAt;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getModifedAt() {
+        return modifedAt;
     }
 
     public void set_id(Object _id) {
