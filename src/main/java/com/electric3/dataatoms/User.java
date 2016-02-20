@@ -6,8 +6,8 @@ public class User extends Gsonable {
     private String email = "";
     private String password = "";
     private String connection = "";
-    private long created_at = 0;
-    private long modified_at = 0;
+    private String created_at = "";
+    private String modified_at = "";
 
     public void setUser_id(String user_id) {
         this.user_id = user_id;
@@ -29,11 +29,11 @@ public class User extends Gsonable {
         this.connection = connection;
     }
 
-    public void setCreated_at(long created_at) {
+    public void setCreated_at(String created_at) {
         this.created_at = created_at;
     }
 
-    public void setModified_at(long modified_at) {
+    public void setModified_at(String modified_at) {
         this.modified_at = modified_at;
     }
 
@@ -41,7 +41,7 @@ public class User extends Gsonable {
         return password;
     }
 
-    public long getCreated_at() {
+    public String getCreated_at() {
         return created_at;
     }
 
@@ -61,7 +61,7 @@ public class User extends Gsonable {
         return connection;
     }
 
-    public long getModified_at() {
+    public String getModified_at() {
         return modified_at;
     }
 
