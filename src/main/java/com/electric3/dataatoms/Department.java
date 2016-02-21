@@ -1,6 +1,6 @@
 package com.electric3.dataatoms;
 
-public class Department extends Gsonable {
+public class Department extends Gsonable implements IStatusProvider {
     private Object _id;
     private User owner;
     private String title = "";

@@ -3,7 +3,7 @@ package com.electric3.dataatoms;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Delivery extends Gsonable {
+public class Delivery extends Gsonable implements IStatusProvider {
     private Object _id;
     private User assignee;
     private List<Comment> comments = new LinkedList<>();
