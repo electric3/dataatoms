@@ -11,24 +11,6 @@ public class Project extends Gsonable {
     private String departmentId = "";
     private String createdAt = "";
     private String modifiedAt = "";
-    private int isStatusRecalculationRequired = 1;
-    private int isProgressRecalculationRequired = 1;
-
-    public void setIsStatusRecalculationRequired(int isStatusRecalculationRequired) {
-        this.isStatusRecalculationRequired = isStatusRecalculationRequired;
-    }
-
-    public void setIsProgressRecalculationRequired(int isProgressRecalculationRequired) {
-        this.isProgressRecalculationRequired = isProgressRecalculationRequired;
-    }
-
-    public int getIsStatusRecalculationRequired() {
-        return isStatusRecalculationRequired;
-    }
-
-    public int getIsProgressRecalculationRequired() {
-        return isProgressRecalculationRequired;
-    }
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
