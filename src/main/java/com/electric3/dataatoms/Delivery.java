@@ -12,6 +12,7 @@ public class Delivery extends Gsonable implements IStatusProvider, IProgressProv
     private StatusEnum status = StatusEnum.GREEN;
     private String title = "";
     private String description = "";
+    private String deadline = "";
     private String projectId = "";
     private String createdAt = "";
     private String modifiedAt = "";
@@ -27,6 +28,14 @@ public class Delivery extends Gsonable implements IStatusProvider, IProgressProv
         this.attachments = attachments;
         this.comments = comments;
         this.assignee = assignee;
+    }
+
+    public void setDeadline(String deadline) {
+        this.deadline = deadline;
+    }
+
+    public String getDeadline() {
+        return deadline;
     }
 
     public void setCreatedAt(String createdAt) {
