@@ -1,6 +1,6 @@
 package com.electric3.dataatoms;
 
-public class Project extends Gsonable implements IStatusProvider {
+public class Project extends Gsonable implements IStatusProvider, IProgressProvider {
     private Object _id;
     private User owner;
     private String title = "";
